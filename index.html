@@ -6,55 +6,57 @@
     <title>Prashanth Kumar Gunda - Resume</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
         }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
         header {
             background: #007BFF;
             color: #fff;
-            padding: 60px 0;
+            padding: 20px 0;
             text-align: center;
+            border-radius: 8px 8px 0 0;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
         }
         header p {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 5px 0;
         }
         .section {
             margin: 20px 0;
         }
         .section h2 {
+            color: #007BFF;
             border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
             margin-bottom: 10px;
-            color: #007BFF;
         }
         .job, .degree {
             margin-bottom: 15px;
         }
         .job h3, .degree h3 {
             margin: 0;
+            font-size: 1.2em;
             color: #007BFF;
         }
         .job p, .degree p {
             margin: 5px 0;
         }
         .additional-info ul {
-            list-style-type: none;
             padding: 0;
+            list-style: none;
         }
         .additional-info ul li {
             background: #007BFF;
@@ -63,26 +65,12 @@
             padding: 10px;
             border-radius: 5px;
         }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #007BFF;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        footer a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Prashanth Kumar Gunda</h1>
-        <p>Email: your-email@example.com | LinkedIn: your-linkedin-profile | GitHub: <a href="https://github.com/PrashanthG1" style="color: #fff;">PrashanthG1</a></p>
+        <p>Email: gundapr@mail.uc.edu | LinkedIn: [your-linkedin-profile] | GitHub: [your-github-profile]</p>
     </header>
 
     <div class="container">
@@ -91,14 +79,25 @@
             <div class="job">
                 <h3>Data Scientist Intern at GEN1E Life Sciences, INC</h3>
                 <p>April 2024 - June 2024</p>
+                <p>Developed ML pipeline using MLOps to identify ARDS patient endotypes based on clinical parameters.</p>
+                <p>Identified baseline parameters using data manipulation techniques and performed advanced EDA on datasets of over 300,000 patients to extract features for endotype classification.</p>
+                <p>Utilized A/B testing to compare the performance of various machine learning models. Achieved the highest ROC-AUC score of 0.98 with an SVM model.</p>
+                <p>Used logistic regression to check the impact of HTE classification and endotype classification on clinical outcomes, finding that only endotype classification is significant, validating the model's effectiveness.</p>
             </div>
             <div class="job">
                 <h3>Graduate Assistant at University of Cincinnati</h3>
                 <p>August 2023 - December 2023</p>
+                <p>Designed a novel pipeline using Clinical BERT for advanced Named Entity Recognition (NER) and sentiment analysis, optimizing the extraction of social determinants from diabetes patient records.</p>
+                <p>Analyzed a vast dataset of 10M electronic health records (EHRs) using SQL, PyTorch, and high-performance computing, revealing SDOH for diabetes.</p>
+                <p>Enhanced Clinical BERT with Parameter Efficient fine-tuning (PEFT) and Low-rank adaptation (LoRA) for NER and sentiment analysis, leading to a 10% increase in model accuracy.</p>
+                <p>Built a chatbot utilizing RAG and LangChain techniques and Streamlit to fetch patient records enabling user interaction about social determinants of health.</p>
             </div>
             <div class="job">
                 <h3>Data Analyst at Infosys</h3>
                 <p>March 2022 - July 2023</p>
+                <p>Conducted data analysis and statistical modeling to support business decision-making.</p>
+                <p>Developed and maintained dashboards and reports using data visualization tools like Tableau and Power BI.</p>
+                <p>Collaborated with cross-functional teams to identify and solve data-related business problems.</p>
             </div>
         </section>
 
@@ -118,18 +117,9 @@
             <h2>Additional Information</h2>
             <ul>
                 <li>Won 3rd prize at 84.51 Case-Competition</li>
-                <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS CI/CD pipelines), data visualization tools like Tableau and Power BI.</li>
+                <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS, GCP), data visualization tools like Tableau and Power BI.</li>
             </ul>
         </section>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Prashanth Kumar Gunda</p>
-        <p>
-            <a href="mailto:your-email@example.com">Email</a> |
-            <a href="your-linkedin-profile">LinkedIn</a> |
-            <a href="https://github.com/PrashanthG1">GitHub</a>
-        </p>
-    </footer>
 </body>
 </html>

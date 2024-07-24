@@ -6,60 +6,83 @@
     <title>Prashanth Kumar Gunda - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
         }
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1, h2 {
-            margin: 0;
-            padding: 0;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin: 20px 0;
         }
         .section h2 {
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
             margin-bottom: 10px;
-        }
-        .experience, .education, .additional-info {
-            margin: 20px 0;
+            color: #007BFF;
         }
         .job, .degree {
             margin-bottom: 15px;
         }
         .job h3, .degree h3 {
             margin: 0;
+            color: #007BFF;
         }
         .job p, .degree p {
             margin: 5px 0;
         }
         .additional-info ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
         .additional-info ul li {
-            margin-bottom: 10px;
+            background: #007BFF;
+            color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007BFF;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Prashanth Kumar Gunda</h1>
-        <p>Email: gundapr@mail.uc.edu | LinkedIn: <a href="https://www.linkedin.com/in/prashanth-kumar-gunda/" style="color: #fff;">your-linkedin-profile</a> | GitHub: <a href="https://github.com/PrashanthG1" style="color: #fff;">PrashanthG1</a></p>
+        <p>Email: your-email@example.com | LinkedIn: your-linkedin-profile | GitHub: <a href="https://github.com/PrashanthG1" style="color: #fff;">PrashanthG1</a></p>
     </header>
 
     <div class="container">
@@ -67,53 +90,15 @@
             <h2>Experience</h2>
             <div class="job">
                 <h3>Data Scientist Intern at GEN1E Life Sciences, INC</h3>
-                <p>Palo Alto, San Francisco</p>
                 <p>April 2024 - June 2024</p>
-                <ul>
-                    <li>Developed ML pipeline using MLOps to identify ARDS patient endotypes based on readily available clinical parameters.</li>
-                    <li>Performed advanced EDA on datasets of over 300,000 patients to extract features for endotype classification.</li>
-                    <li>Achieved highest ROC-AUC score of 0.98 with SVM model through A/B testing of various models.</li>
-                    <li>Validated model effectiveness using Logistic regression for clinical outcomes.</li>
-                </ul>
             </div>
             <div class="job">
                 <h3>Graduate Assistant at University of Cincinnati</h3>
-                <p>Cincinnati, Ohio</p>
                 <p>August 2023 - December 2023</p>
-                <ul>
-                    <li>Designed a pipeline using Clinical BERT for advanced NER and sentiment analysis on diabetes patient records.</li>
-                    <li>Analyzed 10M EHRs revealing social determinants for diabetes using SQL, PyTorch, and high-performance computing.</li>
-                    <li>Enhanced Clinical BERT with PEFT and LoRA for increased model accuracy by 10%.</li>
-                    <li>Built a chatbot using RAG and LangChain techniques to enhance patient record interaction and care insights.</li>
-                </ul>
             </div>
             <div class="job">
                 <h3>Data Analyst at Infosys</h3>
-                <p>Hyderabad, India</p>
                 <p>March 2022 - July 2023</p>
-                <ul>
-                    <li>Developed a model pipeline to identify fraudulent insurance claims using large datasets.</li>
-                    <li>Applied EDA, missing value imputation, and categorical encoding for model preparation.</li>
-                    <li>Built and fine-tuned multiple models using Grid Search CV for hyperparameter optimization.</li>
-                    <li>Achieved 85% accuracy with ensemble techniques and improved ARIMA model for claim forecasting by 30%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Data Analyst at BYJU’S</h3>
-                <p>Bengaluru, India</p>
-                <p>August 2021 - January 2021</p>
-                <ul>
-                    <li>Developed a web platform to capture and log user engagement with Maths content.</li>
-                    <li>Processed engagement data and applied K-Means clustering to optimize content delivery, increasing engagement by 20%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Research Associate at IIT Hyderabad</h3>
-                <p>July 2020 - July 2021</p>
-                <ul>
-                    <li>Analyzed vibration data using SVM to understand vortex formation.</li>
-                    <li>Built a supervised machine learning model achieving 86% accuracy in predicting optimal cluster membership.</li>
-                </ul>
             </div>
         </section>
 
@@ -121,13 +106,11 @@
             <h2>Education</h2>
             <div class="degree">
                 <h3>Master of Science in Business Analytics</h3>
-                <p>University of Cincinnati, Carl H. Lindner College of Business</p>
-                <p>Expected: August 2024 | CGPA: 3.7</p>
+                <p>University of Cincinnati, Carl H. Lindner College of Business (Expected: August 2024)</p>
             </div>
             <div class="degree">
                 <h3>Master of Technology in Engineering</h3>
-                <p>Indian Institute of Technology, Hyderabad</p>
-                <p>August 2021 | GPA: 4.0</p>
+                <p>Indian Institute of Technology, Hyderabad (August 2021)</p>
             </div>
         </section>
 
@@ -135,9 +118,18 @@
             <h2>Additional Information</h2>
             <ul>
                 <li>Won 3rd prize at 84.51 Case-Competition</li>
-                <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS, GCP), data visualization tools like Tableau and Power BI.</li>
+                <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS CI/CD pipelines), data visualization tools like Tableau and Power BI.</li>
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Prashanth Kumar Gunda</p>
+        <p>
+            <a href="mailto:your-email@example.com">Email</a> |
+            <a href="your-linkedin-profile">LinkedIn</a> |
+            <a href="https://github.com/PrashanthG1">GitHub</a>
+        </p>
+    </footer>
 </body>
 </html>

@@ -100,6 +100,37 @@
         .profile-description p {
             margin: 0;
         }
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust the spacing between items as needed */
+        }
+        .contact-details li {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .contact-details i {
+            margin-right: 10px;
+            color: #007BFF;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .download-link:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -124,19 +155,18 @@
             <img src="https://github.com/PrashanthG1/PrashanthG1.github.io/raw/main/1708661820543.jpeg" alt="Prashanth Kumar Gunda">
             <div class="profile-description">
                 <h1>Prashanth Kumar Gunda </h1>
-
-                  <div class="container">
+                
         <section id="contact" class="section">
             <h2>Contact Details</h2>
             <ul class="contact-details">
-                <li><i class="fas fa-envelope"></i> <a href="mailto:gundapr@mail.uc.edu">gundapr@mail.uc.edu</a></li>
-                <li><i class="fas fa-phone-alt"></i> +1-954-560-2208</li>
-                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a></li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/PrashanthG1" target="_blank">github.com/PrashanthG1</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:gundapr@mail.uc.edu">Email: gundapr@mail.uc.edu</a></li>
+                <li><i class="fas fa-phone-alt"></i> Phone: +1-954-560-2208</li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn: linkedin.com/in/your-linkedin-profile</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/PrashanthG1" target="_blank">GitHub: github.com/PrashanthG1</a></li>
             </ul>
             <a href="resume.pdf" download="Prashanth_Kumar_Gunda_Resume.pdf" class="download-link">Download Resume (PDF)</a>
         </section>
-                  </div>
+    </div>
                 <h2>About Me</h2>
                 <p>Hello! I'm Prashanth Kumar Gunda, a passionate Data Scientist with a strong background in developing and deploying machine learning models. I have a keen interest in healthcare data and have worked on various projects involving NLP, MLOps, and data visualization.</p>
 

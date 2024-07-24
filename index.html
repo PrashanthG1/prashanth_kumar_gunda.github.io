@@ -10,7 +10,8 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            scroll-behavior: smooth;
         }
         .container {
             width: 80%;
@@ -33,6 +34,23 @@
         }
         header p {
             margin: 5px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background: #007BFF;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #0056b3;
         }
         .section {
             margin: 20px 0;
@@ -65,6 +83,23 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .profile-description {
+            max-width: 600px;
+        }
+        .profile-description p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -73,9 +108,24 @@
         <p>Email: gundapr@mail.uc.edu | LinkedIn: [your-linkedin-profile] | GitHub: [your-github-profile]</p>
     </header>
 
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <section class="experience section">
-            <h2>Experience</h2>
+        <section id="profile" class="section profile">
+            <img src="your-photo-url" alt="Prashanth Kumar Gunda">
+            <div class="profile-description">
+                <h2>About Me</h2>
+                <p>Hello! I'm Prashanth Kumar Gunda, a passionate Data Scientist with a strong background in developing and deploying machine learning models. I have a keen interest in healthcare data and have worked on various projects involving NLP, MLOps, and data visualization.</p>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <h2>Resume</h2>
             <div class="job">
                 <h3>Data Scientist Intern at GEN1E Life Sciences, INC</h3>
                 <p>April 2024 - June 2024</p>
@@ -99,10 +149,6 @@
                 <p>Developed and maintained dashboards and reports using data visualization tools like Tableau and Power BI.</p>
                 <p>Collaborated with cross-functional teams to identify and solve data-related business problems.</p>
             </div>
-        </section>
-
-        <section class="education section">
-            <h2>Education</h2>
             <div class="degree">
                 <h3>Master of Science in Business Analytics</h3>
                 <p>University of Cincinnati, Carl H. Lindner College of Business (Expected: August 2024)</p>
@@ -111,14 +157,25 @@
                 <h3>Master of Technology in Engineering</h3>
                 <p>Indian Institute of Technology, Hyderabad (August 2021)</p>
             </div>
+            <div class="additional-info">
+                <h2>Additional Information</h2>
+                <ul>
+                    <li>Won 3rd prize at 84.51 Case-Competition</li>
+                    <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS, GCP), data visualization tools like Tableau and Power BI.</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="additional-info section">
-            <h2>Additional Information</h2>
-            <ul>
-                <li>Won 3rd prize at 84.51 Case-Competition</li>
-                <li>Relevant skills: Python, R, MLOps/AIOps, NLP models, AI agents, cloud deployment (Azure, AWS, GCP), data visualization tools like Tableau and Power BI.</li>
-            </ul>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Details about your projects go here...</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: gundapr@mail.uc.edu</p>
+            <p>LinkedIn: [your-linkedin-profile]</p>
+            <p>GitHub: [your-github-profile]</p>
         </section>
     </div>
 </body>
